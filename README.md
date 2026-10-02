@@ -30,6 +30,14 @@ Replace utility_name with the name of the utility you wish to use. Once you have
 Available Utilities
 The following utilities are currently available in this repository:
 
+- **`hide_image_squared_rectangle.py`** — Hide a photo (or a simple `.obj` mesh projected orthographically) inside a colorful squared-rectangle mosaic. High-detail regions split into many small squares; flat regions stay large. Needs `pillow` and `numpy`.
+
+  ```bash
+  pip install pillow numpy
+  python hide_image_squared_rectangle.py photo.jpg -o mosaic.png
+  python hide_image_squared_rectangle.py --demo -o demo_mosaic.png
+  python hide_image_squared_rectangle.py mesh.obj -o mosaic.png --obj-size 512
+  ```
 
 Each utility contains a set of functions and classes designed to simplify common programming tasks. For more information on each utility, please see its individual documentation.
 
